@@ -22,3 +22,11 @@ const additionalVoteCount = 100
 
 
 console.log(voteCount + additionalVoteCount)
+
+
+// 04. string 데이터 연산하기
+
+const genre = "SF"
+const category = "영화"
+
+console.log(genre + " " + category)

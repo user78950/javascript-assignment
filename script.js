@@ -15,3 +15,10 @@ console.log(voteCount)
 console.log(popularity)
 console.log(releaseDate)
 console.log(originalLanguage)
+
+// 03. Number 데이터 연산하기
+
+const additionalVoteCount = 100
+
+
+console.log(voteCount + additionalVoteCount)

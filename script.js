@@ -31,3 +31,15 @@ const description = document.querySelector(".description");
 
 description.classList.add("text-primary","fw-bold");
 
+// 06. 함수의 반환값을 화면에 표시하기
+
+const movieList = document.querySelector("#movie-list");
+
+const card = document.createElement("div");
+
+card.textContent = getMovieMessage(movieTitle, voteAverage);
+
+card.classList.add("card","border","rounded","p-3","mb-2");
+
+movieList.append(card);
+

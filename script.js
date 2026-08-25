@@ -43,3 +43,16 @@ card.classList.add("card","border","rounded","p-3","mb-2");
 
 movieList.append(card);
 
+// 07. 영화 하나 더 추가
+
+const card2 = document.createElement("div");
+
+card2.textContent = getMovieMessage("인터스텔라", 8.7);
+
+card2.classList.add("card2","border","rounded","p-3","mb-2");
+
+movieList.append(card2);
+
+// 08. 영화 요소 삭제해보기
+
+// card2.remove();

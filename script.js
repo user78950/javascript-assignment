@@ -25,3 +25,9 @@ title.textContent ="오늘의 추천 영화";
 
 console.log(title.textContent);
 
+// 05. 설명 영역 강조하기
+
+const description = document.querySelector(".description");
+
+description.classList.add("text-primary","fw-bold");
+

@@ -29,6 +29,48 @@ searchForm.addEventListener("submit",(event) =>{
 
 });
 
+ // 06. forEach()로 영화 목록 출력하기
+
+ const movies = [
+  {
+    title : "인셉션",
+    voteAverage : 8.4,
+
+  },
+  {
+    title : "인터스텔라",
+    voteAverage : 8.7,
+
+  },
+  {
+    title : "다크나이트",
+    voteAverage : 9.0,
+
+  },
+  
+];
+
+movies.forEach((movie) => {
+  if (movie.title === "인셉션") {
+    console.log(`${movie.title}의 평점은 ${movie.voteAverage}점입니다.`);
+  }
+  if (movie.title === "인터스텔라") {
+    console.log(`${movie.title}의 평점은 ${movie.voteAverage}점입니다.`);
+  }
+  if (movie.title === "다크나이트") {
+    console.log(`${movie.title}의 평점은 ${movie.voteAverage}점입니다.`);
+  }
+
+// 07. 영화 목록을 화면에 출력하기.
+
+
+  const movieList = document.querySelector("#movie-list");
+
+  const movieNames = document.createElement("li");
+  movieNames.textContent = movie.title;
+  movieList.append(movieNames);
+});
+
 
 
 

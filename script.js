@@ -28,6 +28,13 @@ const foundMovie = movies.find((movie) => {
 
 console.log(foundMovie);
 
+// 03. filter()로 평점이 높은 영화 찾기
+
+const highRatedMovies = movies.filter((movie) => {
+  return movie.voteAverage >= 8.5;
+});
+
+console.log(highRatedMovies);
 
 
 

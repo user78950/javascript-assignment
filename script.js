@@ -36,6 +36,14 @@ const highRatedMovies = movies.filter((movie) => {
 
 console.log(highRatedMovies);
 
+// 04. map()으로 영화 제목만 가져오기
+
+const movieTitles = movies.map((movie) => {
+  return movie.title
+});
+
+console.log(movieTitles);
+
 
 
 

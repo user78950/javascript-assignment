@@ -44,7 +44,21 @@ const movieTitles = movies.map((movie) => {
 
 console.log(movieTitles);
 
+//05. 검색어 가공하기
 
+const searchForm = document.querySelector("#search-form");
+const searchInput = document.querySelector("#search-input");
+const searchResult = document.querySelector("#search-result");
+
+searchInput.value = searchInput.value.trim().toLowerCase(); 
+// input 창 정상화 시키기
+
+searchForm.addEventListener("submit", (event) => {
+  event.preventDefault(); // 1) Form의 기본 동작을 막습니다.
+  const value = searchInput.value;
+  searchResult.textContent = `검색어 : ${value}`;
+
+});
 
 
 

@@ -20,6 +20,14 @@ const movies = [
   },
 ];
 
+// 02. find()로 영화 찾기
+
+const foundMovie = movies.find((movie) => {
+  return movie.textContent = `${movies[1].title}의 평점은 ${movies[1].voteAverage}점입니다.`
+});
+
+console.log(foundMovie);
+
 
 
 

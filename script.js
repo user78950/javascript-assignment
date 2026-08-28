@@ -16,5 +16,10 @@ const movieJson = JSON.stringify(movie);
 console.log(movieJson);
 console.log(typeof movieJson); // JSON은 string
 
+// 04. JSON 문자열을 JavaScript 값으로 변환하기
 
+const parsedMovie = JSON.parse(movieJson);
+
+console.log(parsedMovie);
+console.log(typeof parsedMovie); // JAVASCRIPT는 object
 

@@ -9,5 +9,12 @@ const movie = {
 
 console.log(movie);
 
+// 03. JavaScript 객체를 JSON 문자열로 변환하기
+
+const movieJson = JSON.stringify(movie);
+
+console.log(movieJson);
+console.log(typeof movieJson); // JSON은 string
+
 
 

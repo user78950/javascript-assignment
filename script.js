@@ -32,3 +32,10 @@ const [firstGenre, secondGenre] = genres;
 
 console.log(firstGenre, secondGenre);
 
+// 04. 존재하지 않는 속성 안전하게 가져오기
+
+const director = movie.detail?.director;
+
+console.log(director);
+
+

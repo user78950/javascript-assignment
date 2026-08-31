@@ -19,5 +19,11 @@ console.log(`제목 : ${title}`);
 console.log(`평점 : ${voteAverage}`);
 
 
+// 02. 새로운 변수 이름으로 할당하기
+
+const firstMovie = movie;
+const {title : movieTitle} = firstMovie;
+console.log(movieTitle);
+
 
 

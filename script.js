@@ -44,5 +44,10 @@ const directorName = movie.detail.director??"감독 정보 없음";
 
 console.log(directorName);
 
+// 06. || 와 ??의 차이 확인하기
 
+const voteCount = 0;
+
+console.log(voteCount || 100); // falsy(틀린 값)을 사용했기 때문에 0이 아니라 100이 나온다.
+console.log(voteCount ?? 100); // undefined 혹은 null이 아니기 때문에 그래서 0으로 나옴
 

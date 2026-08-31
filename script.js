@@ -26,4 +26,9 @@ const {title : movieTitle} = firstMovie;
 console.log(movieTitle);
 
 
+// 03. 배열 구조 분해 할당하기
+
+const [firstGenre, secondGenre] = genres;
+
+console.log(firstGenre, secondGenre);
 

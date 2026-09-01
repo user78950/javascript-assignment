@@ -22,6 +22,12 @@ async function getNowPopularMovies() {
 
   console.log(data.results)
 
+// 05. 첫 번째 영화 가져오기
+
+  const firstMovie = data.results[0];
+
+  console.log(firstMovie);
+
 
 
 }

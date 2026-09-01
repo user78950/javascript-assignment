@@ -28,7 +28,12 @@ async function getNowPopularMovies() {
 
   console.log(firstMovie);
 
+// 06. 영화 제목과 평점 가져오기
 
+  const {title, vote_average} = firstMovie;
+
+  console.log(`제목 : ${title}`);
+  console.log(`평점 : ${vote_average}`);
 
 }
 

@@ -16,6 +16,12 @@ async function getNowPopularMovies() {
   console.log(response);
 
 
+// 04. Response의 데이터 사용하기
+
+  const data = await response.json()
+
+  console.log(data.results)
+
 
 
 }

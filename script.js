@@ -9,4 +9,21 @@ const options = {
 
 const url = "https://api.themoviedb.org/3/movie/now_playing?language=ko-KR";
 
+// 03. fetch()로 서버에 Request 보내기
 
+async function getNowPopularMovies() {
+  const response = await fetch("https://api.themoviedb.org/3/movie/now_playing?language=ko-KR", options);
+  console.log(response);
+
+
+
+
+}
+
+getNowPopularMovies();
+
+
+
+// async function getNowPlaying() {}
+
+// getNowPlaying();

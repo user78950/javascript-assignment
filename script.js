@@ -46,5 +46,28 @@ function createMovieCard(movie) {
 
 }
 
+function renderMovies(movies) {
+  // TODO 6. forEach()로 영화 목록을 반복하면서
+
+  movies.forEach((movie) => {
+    container.append(createMovieCard(movie));
+  });
+  // createMovieCard()로 만든 카드를 container에 추가하세요.
+}
+
+async function getTopRatedMovies() {
+  // TODO 7. API 요청 전에 Loading 문구를 표시하세요.
+  container.textContent = " 평점 높은 영화 목록을 불러오는 중... ";
+
+  const response = await fetch(URL, options);
+  const data = await response.json();
+
+  // TODO 8. Loading 문구를 지우세요.
+  container.textContent = "";
+
+  // TODO 9. data.results를 renderMovies()에 전달하세요.
+  renderMovies(data.results);
+
+}
 
 getTopRatedMovies();

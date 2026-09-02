@@ -29,6 +29,22 @@ function createMovieCard(movie) {
   poster.src = posterUrl;
   poster.alt = `${title} 포스터`
 
+  // TODO 4. 영화 제목 h3 요소와 평점 p 요소를 만드세요.
+
+  const titleEl = document.createElement("h3")
+  const voteAverage = document.createElement("p")
+
+  titleEl.textContent = `${title}`;
+  voteAverage.textContent = `${vote_average}`;
+
+  // TODO 5. 만든 요소를 card에 추가하고 card를 반환하세요.
+
+  card.append(poster, titleEl, voteAverage);
+
+  return card;
+
+
 }
+
 
 getTopRatedMovies();

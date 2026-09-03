@@ -66,7 +66,13 @@ try {
     // TODO 7. data.results를 renderMovies()에 전달하세요.
   } catch(error) {
     container.textContent = "영화 목록을 불러오는데 실패했습니다.";
-
+    // 선택 과제 : 오류 화면에 다시 시도 버튼 추가하기
+    const retryButton = document.createElement("button");
+    retryButton.addEventListener("click", ()=> {
+      getPopularMovies();
+    });
+    container.append(retryButton);
+    retryButton.textContent = "다시 시도"
   
     // TODO 8. 사용자에게 오류 안내 문구를 표시하세요.
     // TODO 9. console.error(error)로 실제 오류를 출력하세요.

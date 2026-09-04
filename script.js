@@ -111,7 +111,13 @@ async function searchTVShows(keyword) {
 
     if (!response.ok) {
       container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
+      // TODO 3. 검색 결과 데이터 확인하기
+    const data = await response.json();
 
+    console.log(data.results);
+
+   
+    
       return;
     }
 

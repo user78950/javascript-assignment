@@ -100,6 +100,9 @@ async function searchTVShows(keyword) {
  
 
   try {
+   // TODO 2. 검색어를 포함한 URL 만들기
+   const encodeKeyword = encodeURIComponent(keyword);
+   const url = `https://api.themoviedb.org/3/search/tv?query=${encodeKeyword}&language=ko-KR&page=1`;
 
     
     

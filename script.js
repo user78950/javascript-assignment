@@ -100,10 +100,9 @@ async function searchTVShows(keyword) {
  
 
   try {
-   // TODO 2. 검색어를 포함한 URL 만들기
-   const encodeKeyword = encodeURIComponent(keyword);
-   const url = `https://api.themoviedb.org/3/search/tv?query=${encodeKeyword}&language=ko-KR&page=1`;
-
+    // TODO 2. 검색어를 포함한 URL 만들기
+    const encodeKeyword = encodeURIComponent(keyword);
+    const url = `https://api.themoviedb.org/3/search/tv?query=${encodeKeyword}&language=ko-KR&page=1`;
     
     
     const response = await fetch(url, options);
@@ -111,22 +110,24 @@ async function searchTVShows(keyword) {
 
     if (!response.ok) {
       container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
-      // TODO 3. 검색 결과 데이터 확인하기
+
+      return;
+    }
+  
+    // TODO 3. 검색 결과 데이터 확인하기
     const data = await response.json();
 
     console.log(data.results);
 
-   
-    
-      return;
-    }
-
+    // TODO 4. 기존 목록 비우기
+    container.textContent = "";
+ 
 
     // TODO 심화 01.
 
     // TODO 6. 검색 결과 화면에 표시하기
     renderTVShows(data.results);
-  } catch (error) {
+  }catch (error) {
     container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
 
     console.error(error);

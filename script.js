@@ -121,7 +121,13 @@ async function searchTVShows(keyword) {
 
     // TODO 4. 기존 목록 비우기
     container.textContent = "";
- 
+    // TODO 5. 검색 결과가 없을 때 처리하기
+    
+    if (data.results.length === 0) {
+      container.textContent = "검색 결과가 없습니다";
+
+      return ;
+    }
 
     // TODO 심화 01.
 

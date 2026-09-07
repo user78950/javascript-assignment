@@ -156,7 +156,7 @@ async function getNowPlayingMovies() {
 }
 
 // TODO 08. 새로고침 후에도 최근 검색어 표시하기
-
+renderKeywords();
 
 getNowPlayingMovies();
 

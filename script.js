@@ -36,7 +36,12 @@ function renderKeywords() {
     removeButton.textContent = "X";
 
     removeButton.addEventListener("click", () => {
+     // TODO 09. 최근 검색어 삭제하기
+     keywords = keywords.filter((itemKeyword) => itemKeyword !== keyword); // keywords 변경
       
+     localStorage.setItem("keywords", JSON.stringify(keywords)); // localStorage 업데이트
+     
+     renderKeywords(); // 화면 다시 그리기
     });
 
 

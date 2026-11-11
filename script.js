@@ -11,4 +11,16 @@ console.log(movie[0].voteAverage);
 console.log(movie[0].isFavorite);
 
 
+// 02. 평점에 따라 영화 분류하기
+
+if (movie[0].voteAverage >= 8) {
+  console.log("추천 영화");
+}
+
+
+else {
+  console.log("일반 영화");
+}
+
+
 

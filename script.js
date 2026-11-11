@@ -35,4 +35,11 @@ else {
 }
 
 
+// 04. 삼항 연산자로 찜 버튼 문구 만들기
+
+const favoriteButtonText = movie[0].isFavorite ? "찜 해제" : "찜 하기";
+console.log(favoriteButtonText);
+
+
+
 

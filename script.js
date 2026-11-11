@@ -23,4 +23,16 @@ else {
 }
 
 
+// 03. 여러 조건을 함께 사용하기
+
+if (movie[0].voteAverage >= 8 && movie[0].voteCount >= 30000) {
+  console.log("인기 추천 영화");
+}
+
+
+else {
+  console.log("일반 영화");
+}
+
+
 
